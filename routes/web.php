@@ -63,7 +63,7 @@ Route::get('index/AliPayController/pay','Pay\AliPayController@pay');
 Route::get('return_url','Pay\AliPayController@aliReturn');
 
 //异步地址
-Route::any('notify_url','Pay\AliPayController@aliNotify');
+Route::post('notify_url','Pay\AliPayController@aliNotify');
 
 
 
