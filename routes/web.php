@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', "User@index");
+// Route::get('/', "User@index");
 
 // 后台
 // -------------------------------------------------------------------------------------------------------
@@ -42,7 +42,7 @@ Route::post('index/Users/register_do','index\Goods@register_do');
 Route::get('index/Users/login','index\Goods@login');
 Route::post('index/Users/login_do','index\Goods@login_do');
 //前台首页
-Route::get('index/Goods/index','index\Goods@index');
+Route::get('/','index\Goods@index');
 //商品详情页
 Route::get('index/Goods/product','index\Goods@product');
 Route::get('index/Goods/product_do','index\Goods@product_do');

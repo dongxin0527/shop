@@ -41,7 +41,7 @@ class Goods extends Controller
     	// dd($user_info);
     	if(!empty($user_info)){
     		session(['userName'=>$data['user'],'userId'=>$user_info['user_id']]);
-    		return redirect('index/Goods/index');
+    		return redirect('/');
     	}else{
     		return redirect('index/Users/login');
     	}
