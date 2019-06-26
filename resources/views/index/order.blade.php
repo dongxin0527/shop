@@ -123,7 +123,7 @@
 												</div>
 												<div class="col s4">
 													<div class="cart-product">
-														<span class="times" order-state="{{$v->state}}" end-time="{{date('Y-m-d H:i:s',$v->add_time+7)}}" order_id="{{$v->id}}"></span>
+														<span class="times" order-state="{{$v->state}}" end-time="{{date('Y-m-d H:i:s',$v->add_time+30)}}" order_id="{{$v->id}}"></span>
 													</div>
 												</div>
 											</div>
