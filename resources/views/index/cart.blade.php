@@ -14,7 +14,7 @@
 							<h5>Image</h5>
 						</div>
 						<div class="col s7">
-							<img src='{{asset("$v->goods_img")}}' alt="" style="width: 200px;height: 200px;">
+							<img src='{{asset("$v->goods_img")}}' alt="">
 						</div>
 					</div>
 					<div class="row">

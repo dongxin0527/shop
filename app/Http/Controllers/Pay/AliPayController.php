@@ -14,7 +14,7 @@ class AliPayController extends Controller
     public $rsaPrivateKeyFilePath = '';  //路径
     public $aliPubKey = '';  //路径
     public $privateKey = 'MIIEogIBAAKCAQEAtgX4h9oUVD3DPiMQCpGISXfxqtB0/P1q6fhiaTDmQubj28IPiX1bUbHgIGhGvey9lQNLlEV4Up2U9VZ3/Jg5i/uBsexRnmKuRU7jBKbQsIyCgQZgVzZpgUQqCdwZJQuRZ3OyfV73X9lApGRYIitCdOOU0ywnrMeQDFoKZcJMtb6h8Re0k6DHrBbbbvSvCFnls0jvyBTY+cGIuv/A+LpDJb1YpvmmZJUYX5o487dJpX+HT25oVafUnu+qv6+3JptSy8AJKwSwqE2rcEgwRhJikcsCe29EACqi4uk0+bR7hJQLaxnbHnhPGYuBA5SEbCJgXvJqvWIcHlTtNsDvy5owbQIDAQABAoIBAAW12j4o0UpzRZTFdNNgDW6AnMxHDeSB7sC4Uh4Ksq6Wn79dLy+ZByxg8C8UFmQO8UOjftN/+m5dEzc/JzR9chC6Ky9xwn29isoR131l3lYrkkyJ7qvNwTGU+dylUwSegElGj+ru98PCBQ0jOMCZqtQP77NQR05cVGCO0pSuq8lnzA46pnsal3y4exu4vDWLW9dc13TqX62hlQJoP0vSJIDrmcsQ7BIBoEEbbTAOxpJedImIoi5i+iZcohH8MLXNQcDV/CKOHwo5WnCcrBgTgV2pwyEOQ+d7cyUmU912jS9unvaUrU8ZA5XW0b04PyCqIQh5lhhJUerNVTghpJn64+ECgYEA4WG91V8QaOlUnRQIsIDh9U1Px5SNlSBI8QZLKrZFWnZdhv3j1+NN28urjxNgxbRIviHc2KXU29JFhI4aSh9jnJX3mnN1PVizOj39/LgEgwCC9RoEjpC97+GMKDNsMtduPvazdtmUfaOQXn5gWzCeIXKZ9J2dlPvJyTAAdXm6AasCgYEAzsBSUAuXBTJTsmBrgTvRapS0kpDvSNRVZmZauZzsZs88ngdgn1K/e/0Pv1tcqabgQrRlRRnD9qP5yLtDaMu0R+ElcqJcc0SY3YcR1VRUauCUp20yTx3S+KiGwpcqEiQ08Km8kZ6/n8xX01Mmq5v7kUaqUgfvFg+1+INoOx0lLkcCgYBLgNX6nB1AOCKbeLGsh5Cq/9phLvf7ZFRrQkN+LI+xTYPpjDZ/BWv43RM9HC3ILaxM3cVBYtSbS6b0UDKocDmLpIXNXS6CfauVMF1dAzynsk0s1Sl/pSesK/ArK4bsxVTujPD0ONHRATGFJmsbQX9IDz9aPk8jMPKZjpYoxL22fwKBgF/Akl6f/4FYnYqvPRrNKV/DHx4CIdAJBsQ2Ay6TjqjOsbQ+lnEzUZuKyBBHr9KihppeEci+9hL0PmrIz59pOEVR8JX2u/pmeqWeOJQkSjR1bmNcH0Ck/2BKLJ9SgxmDy0DqW3rVmsnXSZWFnRM9WnUd1SPIqOH+xLgjo9I83UthAoGAdddvGRYYSmdsmP0U5C37mmV46SYSlemb2qCWmh0T/wQrr54gCVfrNoChS3gXMPf3vSEhRtG6bpbntjUSz/8y95/qV/y0ysoLhp2KdA95xVE3/GIeNR3ldaAXPtM9hgixfseAgAMbdoaBRcz1O8hHIYdqvL9Jch67lyu8i+XANHs=';
-    public $publicKey = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtgX4h9oUVD3DPiMQCpGISXfxqtB0/P1q6fhiaTDmQubj28IPiX1bUbHgIGhGvey9lQNLlEV4Up2U9VZ3/Jg5i/uBsexRnmKuRU7jBKbQsIyCgQZgVzZpgUQqCdwZJQuRZ3OyfV73X9lApGRYIitCdOOU0ywnrMeQDFoKZcJMtb6h8Re0k6DHrBbbbvSvCFnls0jvyBTY+cGIuv/A+LpDJb1YpvmmZJUYX5o487dJpX+HT25oVafUnu+qv6+3JptSy8AJKwSwqE2rcEgwRhJikcsCe29EACqi4uk0+bR7hJQLaxnbHnhPGYuBA5SEbCJgXvJqvWIcHlTtNsDvy5owbQIDAQAB';
+    public $publicKey = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyOsizgmZekCHdV3P571m+0MBkQyGmcpuj5oUYzZG7svbCWvop045id+O+yj8d+tajj9b53pwHh1QS75E8DJUeYDdQ2l/X1dQZ7p3ZNDgRoJMMiKGUPRXRdg9Lh505cN+DDOEDOnYWLBsHGBvGAeDBkJw8CsoNGvjDvPwA/8uDueWxeRGkYFMV7AQyF7+i91n8mcqzXteyz5gdG+Q62W4Ui25vbgjexgX+Ugv5G2ghelJAQB5UTtX5OqC1xFWWms4opw04h6eUC6ZVickOI4CkDxHj1xa3sav1R0e/HeMjTK+nPRCgbJngspR6Cbiqgne47Jvfm/2bF34DZdjsrAuKQIDAQAB';
     public function __construct()
     {
         $this->app_id = '2016092900620874';
@@ -179,7 +179,7 @@ class AliPayController extends Controller
         //验签
         $res = $this->verify($_POST);
         $log_str = '>>>> ' . date('Y-m-d H:i:s');
-        if($res){
+        if($res === false){
             //记录日志 验签失败
             $log_str .= " Sign Failed!<<<<< \n\n";
             file_put_contents(storage_path('logs/alipay.log'),$log_str,FILE_APPEND);
@@ -188,18 +188,18 @@ class AliPayController extends Controller
             file_put_contents(storage_path('logs/alipay.log'),$log_str,FILE_APPEND);
         }
         //验证订单交易状态
-        if($_POST['trade_status']=='TRADE_SUCCESS'){
-            //更新订单状态
-            $oid = $_POST['out_trade_no'];     //商户订单号
-            $info = [
-                'is_pay'        => 1,       //支付状态  0未支付 1已支付
-                'pay_amount'    => $_POST['total_amount'] * 100,    //支付金额
-                'pay_time'      => strtotime($_POST['gmt_payment']), //支付时间
-                'plat_oid'      => $_POST['trade_no'],      //支付宝订单号
-                'plat'          => 1,      //平台编号 1支付宝 2微信 
-            ];
-            // OrderModel::where(['oid'=>$oid])->update($info);
-        }
+        // if($_POST['trade_status']=='TRADE_SUCCESS'){
+        //     //更新订单状态
+        //     $oid = $_POST['out_trade_no'];     //商户订单号
+        //     $info = [
+        //         'is_pay'        => 1,       //支付状态  0未支付 1已支付
+        //         'pay_amount'    => $_POST['total_amount'] * 100,    //支付金额
+        //         'pay_time'      => strtotime($_POST['gmt_payment']), //支付时间
+        //         'plat_oid'      => $_POST['trade_no'],      //支付宝订单号
+        //         'plat'          => 1,      //平台编号 1支付宝 2微信 
+        //     ];
+        //     // OrderModel::where(['oid'=>$oid])->update($info);
+        // }
         //处理订单逻辑
         $this->dealOrder($_POST);
         echo 'success';
